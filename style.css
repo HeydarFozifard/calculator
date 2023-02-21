@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    background: #355c7d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #c06c84,
+        #6c5b7b,
+        #355c7d
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #c06c84,
+        #6c5b7b,
+        #355c7d
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.title{
+    color: #fff;
+}
+.border_radius {
+    border-radius: 8px;
+    padding: 15px 0;
+    margin: 4px;
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px;
+    line-height: 2;
+    
+}
+.calculator_box {
+    display: grid;
+    width: 450px;
+    grid-template-areas:
+        "a a a a"
+        "b c d e"
+        "haft hasht noh m"
+        "char pang shish m"
+        "yek do seh m"
+        "sefer D C m";
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.result_box {
+    grid-area: a;
+    background-color: rgb(209, 190, 190);
+    text-align: left;
+    padding-left: 10px;
+    color: #000;
+}
+
+.operation_box_1 {
+    grid-area: b;
+    background-color: rgb(104, 180, 155);
+}
+.operation_box_2 {
+    grid-area: c;
+    background-color: rgb(104, 180, 155);
+}
+.operation_box_3 {
+    grid-area: d;
+    background-color: rgb(104, 180, 155);
+}
+.operation_box_4 {
+    grid-area: e;
+    background-color: rgb(104, 180, 155);
+}
+
+/* set the number  */
+
+.number_box_7 {
+    grid-area: haft;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_8 {
+    grid-area: hasht;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_9 {
+    grid-area: noh;
+    background-color: rgb(50, 56, 54);
+}
+
+.number_box_4 {
+    grid-area: char;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_5 {
+    grid-area: pang;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_6 {
+    grid-area: shish;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_1 {
+    grid-area: yek;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_2 {
+    grid-area: do;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_3 {
+    grid-area: seh;
+    background-color: rgb(50, 56, 54);
+}
+.number_box_0 {
+    grid-area: sefer;
+    background-color: rgb(202, 110, 49);
+}
+.number_box_D {
+    grid-area: D;
+    background-color: rgb(202, 110, 49);
+}
+.number_box_C {
+    grid-area: C;
+    background-color: rgb(202, 110, 49);
+}
+
+.operation_box_E {
+    grid-area: m;
+    background-color: rgb(98, 173, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* responsive */
+
+@media only screen  and (max-width:460px) {
+   
+    .calculator_box {
+        width:300px ;
+    }
+}
+
+
+@media only screen  and (max-width:410px) {
+   
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen  and (max-width:310px) {
+   
+    h1{
+        font-size: 15px;
+    }
+}
